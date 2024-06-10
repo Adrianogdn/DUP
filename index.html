@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="./src/input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="/src/glightbox/css/glightbox.css">
 
     <link rel="stylesheet"
@@ -57,48 +58,37 @@
                 </div>
                 <div class="block lg:hidden pr-4">
                     <button id="nav-toggle"
-                        class="flex items-center p-1 text-white-800 hover:text-gray-800 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        class="flex items-center p-1 text-white focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                         <i class="fa-solid fa-bars" id="bars"></i>
                     </button>
                 </div>
-                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20 rounded"
+                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-neutral-950 lg:bg-transparent text-black p-4 lg:p-0 z-20 rounded"
                     id="nav-content">
                     <ul class="list-reset lg:flex justify-center text-center flex-1 items-center">
                         <li class="mr-3 ">
-                            <a class="inline-block py-2 px-4 lg:text-white text-white no-underline lg:hover:text-white hover:text-underline uppercase navlink relative "
+                            <a class="inline-block py-2 px-4  text-white no-underline  hover:text-underline uppercase navlink relative "
                                 href="#Top">Home</a>
                         </li>
                         <li class="mr-3">
-                            <a class="inline-block lg:text-white text-gray-800 no-underline lg:hover:text-white hover:text-gray-800 hover:text-underline py-2 px-4 uppercase navlink relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-                        before:bottom-0 before:left-0 before:bg-stone-900
-                        before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                        before:transition before:ease-in-out before:duration-300" id="navlink" href="about.html">Quem
+                            <a class="inline-block text-white no-underline  hover:text-underline py-2 px-4 uppercase navlink relative "
+                                id="navlink" href="about.html">Quem
                                 somos</a>
                         </li>
                         <li class="mr-3">
-                            <a class="inline-block lg:text-white text-gray-800 no-underline lg:hover:text-white hover:text-gray-800 hover:text-underline py-2 px-4 uppercase navlink relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-                        before:bottom-0 before:left-0 before:bg-stone-900
-                        before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                        before:transition before:ease-in-out before:duration-300" id="navlink"
-                                href="#Services">Serviços</a>
+                            <a class="inline-block text-white no-underline  hover:text-underline py-2 px-4 uppercase navlink relative "
+                                id="navlink" href="#Services">Serviços</a>
                         </li>
                         <li class="mr-3">
-                            <a class="inline-block lg:text-white text-gray-800 no-underline lg:hover:text-white hover:text-gray-800 hover:text-underline py-2 px-4 uppercase navlink relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-                        before:bottom-0 before:left-0 before:bg-stone-900
-                        before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                        before:transition before:ease-in-out before:duration-300" id="navlink"
-                                href="/blog/blog.html">Blog</a>
+                            <a class="inline-block text-white no-underline  hover:text-underline py-2 px-4 uppercase navlink relative "
+                                id="navlink" href="/blog/blog.html">Blog</a>
                         </li>
 
                         <li class="mr-3 border-b lg:border-none">
-                            <a class="mx-auto inline-block lg:text-white text-gray-800 no-underline lg:hover:text-white hover:text-gray-800 hover:text-underline py-2 px-4 uppercase navlink relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-                        before:bottom-0 before:left-0 before:bg-stone-900
-                        before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                        before:transition before:ease-in-out before:duration-300" id="navlink"
-                                href="#Contact">Contato</a>
+                            <a class="mx-auto inline-block text-white no-underline  hover:text-underline py-2 px-4 uppercase navlink relative "
+                                id="navlink" href="#Contact">Contato</a>
                         </li>
                         <li><a target='_blank' href=''
-                                class='group  relative inline-flex items-center justify-center cursor-pointer h-12 border border-solid py-0 px-6 rounded-full overflow-hidden z-10 transition-all duration-300 ease-in-out outline-0  text-white hover:text-black border-white'>
+                                class='group relative inline-flex items-center justify-center cursor-pointer h-12 border border-solid mt-4 md:mt-0 py-0 px-6 rounded-full overflow-hidden z-10 transition-all duration-300 ease-in-out outline-0  text-white hover:text-black border-white'>
                                 <strong class='font-medium'>Fale Conosco</strong>
 
                                 <span
@@ -265,7 +255,7 @@
 
         </div>
     </section>
-    <section id="About" class="bg-stone-900">
+    <section id="About" class="bg-neutral-950">
 
         <div class="mx-auto flex flex-col lg:flex-row">
             <div class="lg:px-12 lg:py-24 pt-12  flex  justify-center lg:w-1/3">
@@ -278,7 +268,7 @@
                 </div>
             </div>
             <div
-                class="lg:px-16 lg:py-20 py-12 flex items-start lg:w-2/3 flex-col mx-auto text-justify tracking-tighter text-lg px-6">
+                class="lg:pl-24 lg:pr-36 lg:py-20 py-12 flex items-start lg:w-2/3 flex-col mx-auto text-justify tracking-tighter text-lg px-6">
                 <p class=" mb-2  text-white font-medium">
                     Bem-vindo à DUP Digital, onde a criatividade encontra a estratégia para impulsionar o
                     crescimento do seu negócio. Fundada em 2022 por Dário Medeiros, um visionário com uma paixão
@@ -353,19 +343,19 @@
             <div
                 class="text-left px-8 lg:py-0 my-auto lg:pl-20 xl:pb-24 xl:w-2/5 lg:w-3/5 flex flex-col justify-center ">
                 <!-- Tab Buttons -->
-                <div class="p-2 rounded-t-lg text-stone-900 w-full  ">
+                <div class="p-2 rounded-t-lg text-neutral-950 w-full  ">
                     <div class="flex justify-center md:justify-start md:space-x-4 text-xl">
                         <button
-                            class="p-2 text-stone-900 font-semibold border-b-4 border-transparent focus:outline-none tab-button min-w-[100px]"
+                            class="p-2 text-neutral-950 font-semibold border-b-4 border-transparent focus:outline-none tab-button min-w-[100px]"
                             onclick="showTab('tab1')">Categorias</button>
                         <button
-                            class="p-2 text-stone-900 font-semibold border-b-4 border-transparent focus:outline-none tab-button min-w-[100px]"
+                            class="p-2 text-neutral-950 font-semibold border-b-4 border-transparent focus:outline-none tab-button min-w-[100px]"
                             onclick="showTab('tab2')">Tab 2</button>
                         <button
-                            class="p-2 text-stone-900 font-semibold border-b-4 border-transparent focus:outline-none tab-button min-w-[100px]"
+                            class="p-2 text-neutral-950 font-semibold border-b-4 border-transparent focus:outline-none tab-button min-w-[100px]"
                             onclick="showTab('tab3')">Tab 3</button>
                         <button
-                            class="p-2 text-stone-900 font-semibold border-b-4 border-transparent focus:outline-none tab-button min-w-[100px]"
+                            class="p-2 text-neutral-950 font-semibold border-b-4 border-transparent focus:outline-none tab-button min-w-[100px]"
                             onclick="showTab('tab4')">Tab 4</button>
                     </div>
                 </div>
@@ -414,7 +404,7 @@
 
 
 
-    <section class="relative z-10 py-16 bg-stone-900">
+    <section class="relative z-10 py-16 overflow-hidden bg-neutral-900">
         <div class="pb-8 px-2   text-white" data-aos="fade-up">
             <h3 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center uppercase">
                 Nossos Clientes
@@ -422,7 +412,7 @@
 
 
         </div>
-        <div class="container px-5 mx-auto lg:px-24 py-5">
+        <div class="relative z-10 container px-5 mx-auto lg:px-24 py-5">
 
             <div class="md:grid md:grid-cols-6 md:gap-16 gap-10 text-center grid grid-cols-3">
                 <div class="flex items-center justify-center" data-aos="fade-up">
@@ -501,25 +491,7 @@
 
             </div>
         </div>
-        <div class="absolute right-0 top-5 z-[-1]"><svg width="238" height="531" viewBox="0 0 238 531" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <rect opacity="0.3" x="422.819" y="-70.8145" width="196" height="541.607" rx="2"
-                    transform="rotate(51.2997 422.819 -70.8145)" fill="url(#paint0_linear_83:2)"></rect>
-                <rect opacity="0.3" x="426.568" y="144.886" width="59.7544" height="541.607" rx="2"
-                    transform="rotate(51.2997 426.568 144.886)" fill="url(#paint1_linear_83:2)"></rect>
-                <defs>
-                    <linearGradient id="paint0_linear_83:2" x1="517.152" y1="-251.373" x2="517.152" y2="459.865"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FFFFFF"></stop>
-                        <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"></stop>
-                    </linearGradient>
-                    <linearGradient id="paint1_linear_83:2" x1="455.327" y1="-35.673" x2="455.327" y2="675.565"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FFFFFF"></stop>
-                        <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"></stop>
-                    </linearGradient>
-                </defs>
-            </svg></div>
+
     </section>
     <section>
         <section class="p-8 bg-white hidden md:block text-gray-800" id="Blog">
@@ -551,7 +523,7 @@
                             </p>
                         </div>
                         <div class=" mt-4"><a href="/blog/artigo1.html"
-                                class="text-primary text-stone-900 font-semibold hover:underline items-end">Leia
+                                class="text-primary text-neutral-950 font-semibold hover:underline items-end">Leia
                                 mais</a>
                         </div>
                     </div>
@@ -578,7 +550,7 @@
                             </p>
                         </div>
                         <div class=" mt-4"><a href="/blog/artigo2.html"
-                                class="text-primary text-stone-900 font-semibold hover:underline items-end">Leia
+                                class="text-primary text-neutral-950 font-semibold hover:underline items-end">Leia
                                 mais</a>
                         </div>
                     </div>
@@ -602,7 +574,7 @@
                                 destacado como uma ferramenta essencial para conectar marcas ao seu público-alvo.</p>
                         </div>
                         <div class=" mt-4"><a href="/blog/artigo3.html"
-                                class="text-primary text-stone-900 font-semibold hover:underline items-end">Leia
+                                class="text-primary text-neutral-950 font-semibold hover:underline items-end">Leia
                                 mais</a>
                         </div>
                     </div>
@@ -615,7 +587,7 @@
                     Artigos
                 </h3>
                 <div class="w-full mb-10" data-aos="fade-up">
-                    <div class="h-1 mx-auto bg-stone-900 w-64 py-0 rounded-t"></div>
+                    <div class="h-1 mx-auto bg-neutral-950 w-64 py-0 rounded-t"></div>
                 </div>
                 <h3 class="w-full my-3 lg:m-3 text-3xl font-bold leading-tight text-gray-800 text-center lg:text-left"
                     data-aos="fade-up">
@@ -645,7 +617,7 @@
                                     </p>
                                 </div>
                                 <div class=" mt-4"><a href="/blog/artigo1.html"
-                                        class="text-primary text-stone-900 font-semibold hover:underline items-end">Leia
+                                        class="text-primary text-neutral-950 font-semibold hover:underline items-end">Leia
                                         mais</a>
                                 </div>
                             </div>
@@ -673,7 +645,7 @@
                                     </p>
                                 </div>
                                 <div class=" mt-4"><a href="/blog/artigo2.html"
-                                        class="text-primary text-stone-900 font-semibold hover:underline items-end">Leia
+                                        class="text-primary text-neutral-950 font-semibold hover:underline items-end">Leia
                                         mais</a>
                                 </div>
                             </div>
@@ -700,7 +672,7 @@
                                         fundamental.</p>
                                 </div>
                                 <div class=" mt-4"><a href="/blog/artigo3.html"
-                                        class="text-primary text-stone-900 font-semibold hover:underline items-end">Leia
+                                        class="text-primary text-neutral-950 font-semibold hover:underline items-end">Leia
                                         mais</a>
                                 </div>
                             </div>
@@ -719,7 +691,7 @@
             </h2>
 
             <div class="w-full mb-10">
-                <div class="h-1 mx-auto bg-stone-900 w-64 my-2 py-0 rounded-t"></div>
+                <div class="h-1 mx-auto bg-neutral-950 w-64 my-2 py-0 rounded-t"></div>
             </div>
             <div class="pb-20 pt-12 px-6 max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
 
@@ -797,7 +769,7 @@
                         </div>
                     </li>
                 </ul>
-                <div class="w-1 hidden md:block bg-stone-900  h-67"></div>
+                <div class="w-1 hidden md:block bg-neutral-950  h-67"></div>
                 <ul class="basis-1/2">
 
                     <li>
@@ -874,7 +846,7 @@
                 </ul>
             </div>
         </section>-->
-        <section class="relative z-10 py-16 md:py-20 lg:py-28 text-white bg-stone-900">
+        <section class="relative z-10 py-16 md:py-20 lg:py-28 text-white bg-neutral-900">
             <div class="container mx-auto">
                 <div class="w-full mx-auto text-center">
                     <h2 class="mb-4 text-3xl font-bold  sm:text-4xl md:text-[45px]">
@@ -1020,25 +992,7 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute right-0 top-5 z-[-1]"><svg width="238" height="531" viewBox="0 0 238 531" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect opacity="0.3" x="422.819" y="-70.8145" width="196" height="541.607" rx="2"
-                        transform="rotate(51.2997 422.819 -70.8145)" fill="url(#paint0_linear_83:2)"></rect>
-                    <rect opacity="0.3" x="426.568" y="144.886" width="59.7544" height="541.607" rx="2"
-                        transform="rotate(51.2997 426.568 144.886)" fill="url(#paint1_linear_83:2)"></rect>
-                    <defs>
-                        <linearGradient id="paint0_linear_83:2" x1="517.152" y1="-251.373" x2="517.152" y2="459.865"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#FFFFFF"></stop>
-                            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"></stop>
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_83:2" x1="455.327" y1="-35.673" x2="455.327" y2="675.565"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#FFFFFF"></stop>
-                            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"></stop>
-                        </linearGradient>
-                    </defs>
-                </svg></div>
+
 
         </section>
         <section id="Contact"></section>
@@ -1090,7 +1044,7 @@
                             </div>
                         </div>
                         <a target="_blank" href=""
-                            class="group relative inline-flex items-center mt-3 mx-auto border border-solid py-3 px-6 rounded-full overflow-hidden z-10 transition-all duration-300 ease-in-out outline-0 hover:text-gray-800 bg-stone-900 text-white border-gray-800 font-bold">
+                            class="group relative inline-flex items-center mt-3 mx-auto border border-solid py-3 px-6 rounded-full overflow-hidden z-10 transition-all duration-300 ease-in-out outline-0 hover:text-gray-800 bg-neutral-950 text-white border-gray-800 font-bold">
                             Enviar
 
                             <span
@@ -1106,14 +1060,14 @@
                             </p>
                             <div class="w-full">
                                 <div class="mb-5 flex items-center justify-center">
-                                    <!-- Youtube -->
-                                    <a href="" target="_blank"
+                                    <!-- Facebook -->
+                                    <a href="https://www.facebook.com/profile.php?id=100087135386189" target="_blank"
                                         class="mr-3 flex h-9 w-9 items-center justify-center  text-gray-600 hover:border-primary hover:bg-primary hover:text-gray-700">
                                         <i class="fa-brands fa-facebook text-2xl"></i>
                                     </a>
 
                                     <!-- Instagram -->
-                                    <a href="" target="_blank"
+                                    <a href="https://www.instagram.com/dup.digital/" target="_blank"
                                         class="mr-3 flex h-9 w-9 items-center justify-centertext-gray-600 hover:border-primary hover:bg-primary hover:text-gray-900">
                                         <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1123,14 +1077,15 @@
                                         </svg>
                                     </a>
 
-                                    <!-- Twitter -->
-                                    <a href="" target="_blank"
+                                    <!-- Youtube -->
+                                    <a href="https://www.youtube.com/channel/UCmLJpJD0RmaFGgTW8N1UnvQ" target="_blank"
                                         class="mr-3 flex h-9 w-9 items-center justify-centertext-gray-600 hover:border-primary hover:bg-primary hover:text-gray-900">
-                                        <i class="fa-brands fa-x-twitter text-xl"></i>
+                                        <i class="fa-brands fa-youtube text-xl"></i>
                                     </a>
 
                                     <!-- LinkedIn -->
-                                    <a href="" target="_blank"
+                                    <a href="https://www.linkedin.com/company/dup-performance-digital/?viewAsMember=true"
+                                        target="_blank"
                                         class="mr-3 flex h-9 w-9 items-center justify-centertext-gray-600 hover:border-primary hover:bg-primary hover:text-gray-900">
                                         <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -1153,7 +1108,7 @@
 
 
         <!--Footer-->
-        <footer class="bg-stone-900 pt-24 pb-12">
+        <footer class="bg-neutral-950 pt-24 pb-12">
             <div class="container mx-auto">
                 <div class="flex flex-wrap">
                     <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
@@ -1208,26 +1163,27 @@
 
             <div class="w-full border-t border-slate-300 pt-10">
                 <div class="mb-5 flex items-center justify-center">
-                    <!-- Youtube -->
-                    <a href="" target="_blank"
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/profile.php?id=100087135386189" target="_blank"
                         class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                         <i class="fa-brands fa-facebook text-2xl"></i>
                     </a>
 
                     <!-- Instagram -->
-                    <a href="" target="_blank"
+                    <a href="https://www.instagram.com/dup.digital/" target="_blank"
                         class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                         <i class="fa-brands fa-instagram text-2xl"></i>
                     </a>
 
-                    <!-- Twitter -->
-                    <a href="" target="_blank"
+                    <!-- Youtube -->
+                    <a href="https://www.youtube.com/channel/UCmLJpJD0RmaFGgTW8N1UnvQ" target="_blank"
                         class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-                        <i class="fa-brands fa-x-twitter text-xl"></i>
+                        <i class="fa-brands fa-youtube text-xl"></i>
                     </a>
 
                     <!-- LinkedIn -->
-                    <a href="" target="_blank"
+                    <a href="https://www.linkedin.com/company/dup-performance-digital/?viewAsMember=true"
+                        target="_blank"
                         class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                         <i class="fa-brands fa-linkedin text-2xl"></i>
                     </a>
@@ -1247,7 +1203,7 @@
 
             <a href="#Top">
                 <button
-                    class="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 flex  justify-center">
+                    class="rounded-lg bg-gray-700 p-3 text-white transition-all hover:bg-gray-600 flex  justify-center z-20">
                     <svg class="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                             d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
