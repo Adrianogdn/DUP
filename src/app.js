@@ -17,8 +17,8 @@ if (document.body.classList.contains('main-page')) {
 
 
         if (scrollpos > 10) {
-            header.classList.add("bg-stone-900");
-            navaction.classList.remove("bg-stone-900");
+            header.classList.add("bg-neutral-950");
+            navaction.classList.remove("bg-neutral-950");
             navaction.classList.remove("text-gray-800");
             navaction.classList.add("text-white");
 
@@ -30,8 +30,8 @@ if (document.body.classList.contains('main-page')) {
             document.getElementById("logo-white").classList.add("hidden");
             document.getElementById("logo-alt").classList.remove("hidden");
 
-            navcontent.classList.remove("bg-stone-900");
-            navcontent.classList.add("bg-stone-900");
+            navcontent.classList.remove("bg-neutral-950");
+            navcontent.classList.add("bg-neutral-950");
             bars.classList.remove("text-white");
             bars.classList.add("text-black");
             if (windowWidth > 1024) {
@@ -42,7 +42,7 @@ if (document.body.classList.contains('main-page')) {
 
         } else {
 
-            header.classList.remove("bg-stone-900");
+            header.classList.remove("bg-neutral-950");
             navaction.classList.remove("text-white");
             navaction.classList.add("text-white");
             bars.classList.remove("text-black");
