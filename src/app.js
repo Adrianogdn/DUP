@@ -366,34 +366,7 @@ if (portfolionIsotope) {
 
 }
 
-const initialState = {
-    text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus.',
-    text2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    imageSrc: 'https://placehold.co/768x768'
-};
 
-function changeContent(buttonNumber) {
-    const text1 = document.getElementById('content-text');
-    const text2 = document.getElementById('content-text2');
-    switch (buttonNumber) {
-        case 1:
-            text1.innerText = initialState.text1;
-            text2.innerText = initialState.text2;
-            break;
-        case 2:
-            text1.innerText = 'Este é o texto exibido quando o Botão 2 é clicado.';
-            text2.innerText = 'Este é o texto2 exibido quando o Botão 2 é clicado.';
-            break;
-        case 3:
-            text1.innerText = 'Este é o texto exibido quando o Botão 3 é clicado.';
-            text2.innerText = 'Este é o texto2 exibido quando o Botão 2 é clicado.';
-            break;
-        case 4:
-            text1.innerText = 'Este é o texto exibido quando o Botão 4 é clicado.';
-            text2.innerText = 'Este é o texto2 exibido quando o Botão 2 é clicado.';
-            break;
-    }
-}
 
 
 function showTab(tabId) {
@@ -420,7 +393,20 @@ function showTab(tabId) {
     if (clickedButton) {
         clickedButton.classList.add('active');
     }
+
+    // Change the image based on the clicked tab
+    const image = clickedButton.getAttribute('data-image');
+    document.getElementById('content-image').src = image;
 }
+
+// Ensure the first tab is visible and the button is active on page load
+document.addEventListener('DOMContentLoaded', () => {
+    showTab('tab1');
+});
+
+
 
 // Initialize the first tab
 showTab('tab1');
+
+

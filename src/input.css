@@ -132,3 +132,84 @@ body {
     border-color: black;
     color: black;
 }
+
+.arrow-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrow-rotated {
+    transform: rotate(180deg);
+}
+
+.arrow-blue {
+    color: #1551fd;
+
+}
+
+.bg-custom-size {
+    background-size: 20% 20%;
+
+}
+
+/* Inclinação para a primeira section */
+.bg-inclined-line {
+    background: linear-gradient(-115deg,
+            white 39%,
+            #002FA5 39%,
+            #002FA5 51%,
+            white 51%);
+}
+
+/* Inclinação para a segunda section */
+.bg-inclinado {
+    background: linear-gradient(-115deg,
+            #002FA5 57.5%,
+            white 57.5%,
+            white 69%,
+            #002FA5 69%);
+}
+
+.custom-scrollbar {
+    scrollbar-width: thin;
+    /* Para navegadores Firefox */
+    scrollbar-color: #000000 #ffffff;
+    /* Cor da barra e do fundo da scrollbar */
+}
+
+/* Para navegadores Webkit */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    /* Largura da scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #ffffff;
+    /* Cor do fundo da scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    /* Cor da barra da scrollbar */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+}
+
+/* Classe para mostrar scrollbar somente em mobile */
+@media (max-width: 767px) {
+    .show-scrollbar {
+        overflow-x: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .show-scrollbar {
+        overflow-x: hidden;
+    }
+}
+
+/* Adicione ao seu arquivo CSS principal */
+.tab-button.active {
+    background-color: black;
+    color: white;
+    border-radius: 9999px;
+}
